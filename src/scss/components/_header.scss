@@ -1,0 +1,195 @@
+.header {
+  background-color: $white;
+  padding: 0 10px;
+  position: relative;
+  &__container {
+    margin: 0 auto;
+    max-width: 1172px;
+    min-height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      min-height: 62px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__burger-btn {
+    background-image: url(../../assets/img/burger-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    width: 24px;
+    height: 17px;
+    margin-left: 5px;
+    margin-right: 14px;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+
+    &_opened {
+      background-image: url(../../assets/img/burger-menu-close.svg);
+    }
+  }
+
+  &__burger-menu {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 0 10px;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 1s cubic-bezier(0.1, 0.5, 0, 1);
+    background-color: $yellow;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+
+    &_opened {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__logo {
+    margin-top: 8px;
+    opacity: 1;
+    transition: $transition;
+
+    @media screen and (min-width: 768px) {
+      &:hover {
+        opacity: 0.6;
+        scale: 1.05;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 136px;
+      height: 21px;
+      margin-top: 6px;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    ul {
+      margin-top: 8px;
+      margin-left: 32px;
+      min-width: 352px;
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1023px) {
+        min-width: 0;
+        gap: 20px;
+      }
+
+      li {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: uppercase;
+        opacity: 1;
+        transition: $transition;
+
+        @media screen and (min-width: 768px) {
+          &:hover {
+            opacity: 0.6;
+            scale: 1.05;
+          }
+        }
+      }
+    }
+  }
+
+  &__burger-nav {
+    padding: 25px 10px 24px;
+    border-bottom: 1px solid #ecb200;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      li {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__burger-links {
+    padding: 25px 10px 24px;
+    border-bottom: 1px solid #ecb200;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      li {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+
+  &__btn-container {
+    margin-top: 8px;
+    display: flex;
+    gap: 17px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-top: 0;
+    }
+  }
+
+  &__btn {
+    min-height: 40px;
+    border-radius: 29px;
+    font-family: 'PF Din Text Cond Pro';
+    color: $brown;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    opacity: 1;
+    transition: $transition;
+    @media screen and (max-width: 767px) {
+      display: none;
+      min-height: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+      &:hover {
+        opacity: 0.6;
+        scale: 1.05;
+      }
+    }
+
+    &_active {
+      min-width: 120px;
+      display: block;
+      background-color: $yellow;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        min-width: 78px;
+      }
+    }
+  }
+}

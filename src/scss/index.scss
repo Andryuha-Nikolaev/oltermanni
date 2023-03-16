@@ -1,0 +1,23 @@
+@import './variables';
+@import './mixins';
+
+@import './libs/normalize';
+@import '../fonts/condPro.css';
+
+@import './components/all';
+
+body {
+  // background-color: $lightBlue;
+  color: $brown;
+  font-family: 'PF Din Text Cond Pro', Arial, sans-serif;
+}
+
+a {
+  color: $brown;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
