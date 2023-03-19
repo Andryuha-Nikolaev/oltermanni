@@ -1,5 +1,9 @@
 import './index.html';
 import './scss/index.scss';
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 
 // кнопка показать/скрыть бургер меню
 const burgerBtn = document.querySelector('.header__burger-btn');

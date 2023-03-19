@@ -1,2 +1,53 @@
 .footer {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 22px 44px 9px;
+  min-height: 130px;
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__tel {
+    color: $red;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 58px;
+  }
+
+  &__author {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: $brownSecond;
+  }
+
+  &__links {
+    ul {
+      display: flex;
+      gap: 70px;
+      li {
+        a {
+          font-family: 'PF Din Text Cond Pro';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
 }
