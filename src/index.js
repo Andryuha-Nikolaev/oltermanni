@@ -1,9 +1,42 @@
 import './index.html';
-import './scss/index.scss';
-import Swiper, { Navigation, Pagination } from 'swiper';
+
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+import './scss/index.scss';
+import Swiper, { Navigation, Pagination } from 'swiper';
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  slidesPerView: 3,
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 25,
+  //   },
+  //   640: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 10,
+  //   },
+  //   960: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 20,
+  //   },
+  // },
+
+  spaceBetween: 10,
+
+  modules: [Navigation, Pagination],
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 // кнопка показать/скрыть бургер меню
 const burgerBtn = document.querySelector('.header__burger-btn');

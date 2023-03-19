@@ -1,11 +1,14 @@
 .action {
   margin: 0 auto;
   padding: 0 20px;
-  overflow: hidden;
-
-  &__content {
-    margin: 0 auto;
-    margin-left: auto;
-    max-width: 1110px;
+  overflow: visible;
+  &__title {
+    padding: 66px 0 24px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    text-transform: uppercase;
   }
 }
