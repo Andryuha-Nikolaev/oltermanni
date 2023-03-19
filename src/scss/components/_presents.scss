@@ -1,0 +1,76 @@
+.presents {
+  background: $gradient;
+  width: 100%;
+  height: 693px;
+  position: absolute;
+  padding: 0 10px;
+  bottom: 0;
+  left: 0;
+
+  &__img {
+    position: absolute;
+
+    &-baloon {
+      left: 57px;
+      bottom: 253px;
+    }
+
+    &-vector {
+      right: 74px;
+      bottom: 313px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-top: 356px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 46px;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    text-transform: uppercase;
+    color: $red;
+    text-shadow: -3px 5px $white;
+  }
+
+  &__card-list {
+    margin: 0 auto;
+    margin-top: 67px;
+    display: flex;
+    // margin-left: 129px;
+    max-width: 1182px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  &__card-arrow {
+    background-image: url(../../assets/img/card-arrow.svg);
+    width: 24px;
+    // height: 45px;
+    background-repeat: no-repeat;
+    // background-size: contain;
+    margin: 0 22px;
+    margin-top: 70px;
+    flex-shrink: 0;
+  }
+
+  &__card-description {
+    min-width: 128px;
+    max-width: 230px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: $brownSecond;
+  }
+}

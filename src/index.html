@@ -76,6 +76,9 @@
         </header>
         <main class="main">
           <section class="promo">
+            <button type="button" class="promo__button">
+              <div class="promo__button-content">Загрузить чек</div>
+            </button>
             <div class="promo__wrap">
               <div class="promo__ellepse"></div>
               <div class="promo__ellepse promo__ellepse-front">
@@ -103,7 +106,64 @@
                 </div>
               </div>
             </div>
-            <div class="promo__presents"></div>
+            <div class="presents">
+              <img
+                class="presents__img presents__img-baloon"
+                src="./assets/img/baloon.svg"
+                alt="изображение шарика" />
+              <img
+                class="presents__img presents__img-vector"
+                src="./assets/img/vector.svg"
+                alt="абстрактное изображение" />
+              <h2 class="presents__title">Нам 40 лет — вам подарки</h2>
+              <ul class="presents__card-list">
+                <li class="presents__card">
+                  <img
+                    class="presents__card-img"
+                    alt="иллюстрация правил акции"
+                    src="./assets/img/rules-img1.svg" />
+                  <p class="presents__card-description">Покупайте сыр Oltermanni</p>
+                </li>
+                <li class="presents__card-arrow"></li>
+                <li class="presents__card">
+                  <img
+                    class="presents__card-img"
+                    alt="иллюстрация правил акции"
+                    src="./assets/img/rules-img2.svg" />
+                  <p class="presents__card-description">
+                    Регистрируйте чеки на сайте в период с 1 сентября по 30 ноября 2020 года
+                  </p>
+                </li>
+                <li class="presents__card-arrow"></li>
+                <li class="presents__card">
+                  <img
+                    class="presents__card-img"
+                    alt="иллюстрация правил акции"
+                    src="./assets/img/rules-img3.svg" />
+                  <p class="presents__card-description">
+                    Получайте гарантированные призы — деньги на телефон
+                  </p>
+                </li>
+                <li class="presents__card-arrow"></li>
+                <li class="presents__card">
+                  <img
+                    class="presents__card-img"
+                    alt="иллюстрация правил акции"
+                    src="./assets/img/rules-img4.svg" />
+                  <p class="presents__card-description">Участвуйте в еженедельных розыгрышах</p>
+                </li>
+                <li class="presents__card-arrow"></li>
+                <li class="presents__card">
+                  <img
+                    class="presents__card-img"
+                    alt="иллюстрация правил акции"
+                    src="./assets/img/rules-img5.svg" />
+                  <p class="presents__card-description">
+                    Получите возможность выиграть 400 000 ₽ на новый интерьер
+                  </p>
+                </li>
+              </ul>
+            </div>
           </section>
         </main>
         <footer class="footer">footer</footer>
@@ -112,7 +172,7 @@
 
     <div class="popup">
       <div class="popup__overlay"></div>
-      <div class="popup__container">
+      <div class="popup__wrap">
         <button type="button" class="popup__close-button"></button>
       </div>
     </div>
