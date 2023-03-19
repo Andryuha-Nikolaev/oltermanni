@@ -8,25 +8,23 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
   loop: true,
+  slidesPerView: 2.4,
+  spaceBetween: 22,
 
-  slidesPerView: 3,
-
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 25,
-  //   },
-  //   640: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 10,
-  //   },
-  //   960: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 20,
-  //   },
-  // },
-
-  spaceBetween: 10,
+  breakpoints: {
+    // 300: {
+    //   slidesPerView: 2.5,
+    //   // spaceBetween: 25,
+    // },
+    768: {
+      slidesPerView: 3,
+      // spaceBetween: 10,
+    },
+    1023: {
+      slidesPerView: 4,
+      // spaceBetween: 20,
+    },
+  },
 
   modules: [Navigation, Pagination],
   pagination: {

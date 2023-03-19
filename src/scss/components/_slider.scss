@@ -1,35 +1,55 @@
 .slider {
+  max-width: 1110px;
   &__slide {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 500px;
-    overflow: visible;
-  }
+    // display: flex;
+    // justify-content: center;
+    // background-color: aqua;
+    // &:nth-child(even) .slider__card {
+    //   width: 179px;
+    //   padding-top: 16px;
+    //   gap: 21px;
+    // }
 
-  &__wrap {
-    overflow: visible;
-    width: 500px;
-  }
-
-  &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 198px;
-    height: 362px;
-    gap: 9px;
-
-    &:nth-child(2n) {
-      width: 179px;
-      padding-top: 16px;
-      gap: 21px;
+    // width: 100%;
+    min-height: 362px;
+    @media screen and (max-width: 1023px) {
+      min-height: 259px;
     }
   }
 
+  &__wrap {
+    // margin: 0 auto;
+  }
+
+  // &__card {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   width: 100%;
+  //   width: 198px;
+  //   height: 362px;
+  //   gap: 9px;
+  // }
+
   &__img {
-    width: 100%;
+    width: 198px;
+    margin-bottom: 5px;
+    // width: 100%;
+    @media screen and (max-width: 1023px) {
+      width: 141px;
+    }
+
+    &_wide {
+      width: 179px;
+      margin: 15px 0 20px;
+      // gap: 21px;
+      @media screen and (max-width: 1023px) {
+        width: 128px;
+      }
+    }
   }
 
   &__title {
@@ -50,17 +70,54 @@
   }
 
   &__button-prev {
-    // top: 200px;
-    left: 90px;
+    top: 304px;
+    left: 0;
     background-image: url('../../assets/img/button-prev.svg');
     color: transparent;
     background-repeat: no-repeat;
+    opacity: 1;
+    transition: $transition;
+
+    @media screen and (min-width: 768px) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 
   &__button-next {
-    // top: 200px;
+    top: 304px;
+    right: 0;
     background-image: url('../../assets/img/button-next.svg');
     color: transparent;
     background-repeat: no-repeat;
+    opacity: 1;
+    transition: $transition;
+
+    @media screen and (min-width: 768px) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.swiper {
+  &-pagination-bullets {
+    top: 540px;
+  }
+
+  &-pagination-bullet {
+    top: 50px;
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 5.5px;
+    background-color: $brownSecond;
+    opacity: 1;
+    &-active {
+      border: 1px solid $brownSecond;
+      background-color: $white;
+    }
   }
 }
