@@ -1,17 +1,5 @@
-@mixin textOptions($font-weight, $font-size, $line-height, $letter-spacing) {
-  font-weight: $font-weight;
-  font-size: calc($index * $font-size);
-  line-height: calc($index * $line-height);
-  letter-spacing: calc($index / $letter-spacing);
-}
-
-@mixin textOptionsBig($font-weight, $font-size, $line-height, $letter-spacing) {
-  font-weight: $font-weight;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-}
-
-@mixin cardTransition() {
-  transition: transform 2s cubic-bezier(0.3, 1, 0.2, 1);
+@mixin promoImgParams($left, $bottom, $width) {
+  left: $left;
+  bottom: $bottom;
+  width: $width;
 }

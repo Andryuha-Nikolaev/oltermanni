@@ -1,13 +1,17 @@
 .promo {
   display: flex;
-  // justify-content: center;
-  // flex-direction: row;
-  // flex-direction: column;
-  // align-items: stretch;
   position: relative;
   width: 100%;
   height: 1180px;
   overflow: hidden;
+
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    height: 1070px;
+  }
+
+  @media screen and (max-width: 767px) {
+    // height: 1070px;
+  }
 
   &__wrap {
     display: flex;
@@ -36,10 +40,26 @@
     @media screen and (min-width: 1441px) {
       width: 120%;
     }
+
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      height: 1000px;
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 480px) {
+      height: 1000px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 645px;
+      // width: 140%;
+      height: 413px;
+      top: -125px;
+    }
   }
 
   &__ellepse-front {
     top: -390px;
+    // display: none;
 
     @media screen and (min-width: 1441px) {
       width: 120%;
@@ -60,32 +80,48 @@
     overflow: hidden;
 
     &-kitchen {
-      width: 891px;
-      left: 0;
-      bottom: 0px;
+      @include promoImgParams(0, 0, 891px);
+      @media screen and (max-width: 1023px) {
+        @include promoImgParams(70px, 0, 860px);
+      }
     }
 
     &-slogan {
-      left: 142px;
-      bottom: 315px;
+      @include promoImgParams(142px, 315px, auto);
+
+      @media screen and (max-width: 1170px) and (min-width: 1024px) {
+        @include promoImgParams(220px, 315px, 500px);
+      }
+      @media screen and (max-width: 1023px) {
+        @include promoImgParams(340px, 315px, 400px);
+      }
     }
 
     &-oltermanni {
-      width: 622px;
-      left: 692px;
-      bottom: 0;
+      @include promoImgParams(692px, 0, 622px);
+      @media screen and (max-width: 1023px) {
+        @include promoImgParams(680px, 0, 520px);
+      }
     }
 
     &-person {
-      width: 615px;
-      left: 298px;
-      bottom: 75px;
+      @include promoImgParams(298px, 75px, 615px);
+      @media screen and (max-width: 1170px) and (min-width: 1024px) {
+        @include promoImgParams(360px, 100px, 560px);
+      }
+      @media screen and (max-width: 1023px) {
+        @include promoImgParams(430px, 130px, 480px);
+      }
     }
 
     &-prize {
-      width: 177px;
-      left: 1100px;
-      bottom: 408px;
+      @include promoImgParams(1100px, 408px, 177px);
+      @media screen and (max-width: 1170px) and (min-width: 1024px) {
+        @include promoImgParams(1050px, 408px, 167px);
+      }
+      @media screen and (max-width: 1023px) {
+        @include promoImgParams(920px, 408px, 167px);
+      }
     }
   }
 
@@ -118,6 +154,10 @@
       &:hover {
         opacity: 0.6;
       }
+    }
+
+    @media screen and (max-width: 1023px) {
+      top: 590px;
     }
   }
 

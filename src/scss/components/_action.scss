@@ -14,9 +14,15 @@
     text-transform: uppercase;
   }
 
+  &__img {
+    position: absolute;
+    top: -30px;
+    left: 110px;
+  }
+
   &__btn-container {
     margin: 0 auto;
-    padding: 0 10px;
+    // padding: 0 10px;
 
     max-width: 1185px;
     position: relative;
