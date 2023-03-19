@@ -2,6 +2,10 @@
   background-color: $white;
   padding: 0 10px;
   position: relative;
+  // position: fixed;
+  // width: 100%;
+  // z-index: 12;
+  // top: 0;
   &__container {
     margin: 0 auto;
     max-width: 1172px;
@@ -36,6 +40,7 @@
   }
 
   &__burger-menu {
+    z-index: 7;
     position: absolute;
     display: none;
     left: 0;
@@ -63,7 +68,6 @@
     @media screen and (min-width: 768px) {
       &:hover {
         opacity: 0.6;
-        scale: 1.05;
       }
     }
 
@@ -103,7 +107,6 @@
         @media screen and (min-width: 768px) {
           &:hover {
             opacity: 0.6;
-            scale: 1.05;
           }
         }
       }
@@ -177,7 +180,6 @@
     @media screen and (min-width: 768px) {
       &:hover {
         opacity: 0.6;
-        scale: 1.05;
       }
     }
 

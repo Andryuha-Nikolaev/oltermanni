@@ -1,0 +1,98 @@
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s linear;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  &_opened {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+  }
+
+  &__container {
+    position: relative;
+    border-radius: 10px;
+    background-color: $white;
+    width: 100%;
+    max-width: 430px;
+    min-height: 200px;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 20px;
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -40px;
+    right: -40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: $transition;
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: 35px;
+      border: 2px solid $white;
+      background-color: $white;
+      top: 0;
+      transform: rotate(45deg);
+
+      @media screen and (max-width: 767px) {
+        height: 28px;
+        border-width: 1px;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      height: 35px;
+      border: 2px solid $white;
+      background-color: $white;
+      top: 0;
+      transform: rotate(-45deg);
+
+      @media screen and (max-width: 767px) {
+        height: 28px;
+        border-width: 1px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 20px;
+      height: 20px;
+      right: 0;
+    }
+  }
+}

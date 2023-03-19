@@ -1,0 +1,106 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  // flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    height: 762px;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  &__presents {
+    background: $gradient;
+    width: 100%;
+    height: 693px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__ellepse {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    position: absolute;
+    width: 1729px;
+    height: 1106px;
+    top: -372px;
+    border-radius: 50%;
+    background: $yellow;
+    overflow: hidden;
+
+    @media screen and (min-width: 1441px) {
+      width: 120%;
+    }
+  }
+
+  &__ellepse-front {
+    top: -390px;
+    // background-color: aqua;
+
+    @media screen and (min-width: 1441px) {
+      width: 120%;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    // padding: 0 20px;
+    // background-color: $gray;
+    // display: flex;
+    height: 100%;
+  }
+
+  &__img {
+    position: absolute;
+    overflow: hidden;
+
+    &-kitchen {
+      width: 891px;
+      // height: 592px;
+      left: 0;
+      bottom: 0px;
+    }
+
+    &-slogan {
+      left: 142px;
+      bottom: 315px;
+    }
+
+    &-oltermanni {
+      width: 622px;
+      left: 692px;
+      bottom: 0;
+    }
+
+    &-person {
+      // width: 558px;
+      width: 615px;
+      left: 298px;
+      bottom: 75px;
+    }
+
+    &-prize {
+      width: 177px;
+      left: 1100px;
+      bottom: 408px;
+    }
+  }
+}

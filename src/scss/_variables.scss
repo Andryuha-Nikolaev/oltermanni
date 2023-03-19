@@ -2,6 +2,7 @@ $white: #ffffff;
 $brown: #5a1404;
 $brownSecond: #5b1a0d;
 $yellow: #ffcd00;
+$gradient: linear-gradient(180deg, #ecb200 0%, #ffcf00 78.83%);
 
 $black: #010101;
 
@@ -15,4 +16,4 @@ $textShadow: #c6c29b;
 
 $index: calc(1vw + 1vh);
 
-$transition: opacity 0.3s linear, scale 0.3s linear;
+$transition: opacity 0.2s linear, scale 0.2s linear;
