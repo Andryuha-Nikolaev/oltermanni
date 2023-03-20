@@ -78,10 +78,8 @@
     opacity: 1;
     transition: $transition;
 
-    @media screen and (min-width: 768px) {
-      &:hover {
-        opacity: 0.6;
-      }
+    &:hover {
+      opacity: 0.6;
     }
   }
 
@@ -94,10 +92,8 @@
     opacity: 1;
     transition: $transition;
 
-    @media screen and (min-width: 768px) {
-      &:hover {
-        opacity: 0.6;
-      }
+    &:hover {
+      opacity: 0.6;
     }
   }
 }

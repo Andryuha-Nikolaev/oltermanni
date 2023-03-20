@@ -1,19 +1,16 @@
 .promo {
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   min-height: 1180px;
   overflow: hidden;
 
-  @media screen and (max-width: 1023px) and (min-width: 768px) {
+  @media screen and (max-width: 1279px) and (min-width: 768px) {
     min-height: 1070px;
   }
 
-  @media screen and (max-width: 767px) and (min-width: 577px) {
-    min-height: 1070px;
-  }
-
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 767px) {
     min-height: 600px;
   }
 
@@ -42,203 +39,146 @@
     overflow: hidden;
     width: 120%;
 
-    @media screen and (min-width: 1441px) {
-      width: 120%;
+    @media screen and (max-width: 1279px) and (min-width: 768px) {
+      height: 1050px;
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 1024px) {
-      width: 130%;
-      // height: 1050px;
-    }
-
-    @media screen and (max-width: 1023px) and (min-width: 768px) {
-      height: 1020px;
-      width: 140%;
-    }
-
-    @media screen and (max-width: 767px) and (min-width: 577px) {
-      height: 930px;
-      width: 150%;
-    }
-
-    @media screen and (max-width: 576px) {
-      width: 646px;
-      top: -125px;
+    @media screen and (max-width: 767px) {
       height: 413px;
+      width: 170%;
+      top: -125px;
     }
-
-    // @media screen and (max-width: 767px) and (min-width: 480px) {
-    //   height: 1000px;
-    // }
-
-    // @media screen and (max-width: 480px) {
-    //   width: 645px;
-    //   // width: 140%;
-    //   height: 413px;
-    //   top: -125px;
-    // }
   }
 
   &__ellepse-front {
     top: -390px;
-    // display: none;
     width: 120%;
-
-    @media screen and (min-width: 1441px) {
-      width: 120%;
-    }
-
-    @media screen and (max-width: 1279px) and (min-width: 1024px) {
-      width: 130%;
-      // height: 1050px;
-    }
-    @media screen and (max-width: 1023px) and (min-width: 768px) {
-      height: 1020px;
-      width: 140%;
-    }
-
-    @media screen and (max-width: 767px) and (min-width: 577px) {
-      height: 930px;
-      width: 150%;
-    }
-
-    @media screen and (max-width: 576px) {
-      width: 646px;
-      top: -125px;
-      height: 413px;
-    }
   }
 
   &__img-container {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    width: 100%;
     width: 85%;
     max-width: 1440px;
     height: 100%;
 
-    // @media screen and (max-width: 1279px) {
-    //   width: 85%;
-    // }
+    @media screen and (max-width: 767px) and (min-width: 350px) {
+      width: 360px;
+    }
+
+    @media screen and (max-width: 349px) {
+      width: 315px;
+    }
   }
 
   &__img {
     position: absolute;
     overflow: hidden;
+  }
 
-    &-kitchen {
-      // @include promoImgParams(0, 0, 891px);
-      @include promoImgParams(0, 0, 891px);
-
-      @media screen and (max-width: 767px) and (min-width: 577px) {
-        width: 80%;
-      }
-
-      @media screen and (max-width: 576px) {
-        width: 65%;
-      }
-
-      // @media screen and (max-width: 1023px) {
-      //   @include promoImgParams(70px, 0, 860px);
-      // }
+  &__img-kitchen {
+    width: 891px;
+    left: 0;
+    bottom: 0px;
+    @media screen and (max-width: 1279px) and (min-width: 1023px) {
+      width: 800px;
     }
 
-    &-slogan {
-      // @include promoImgParams(142px, 315px, auto);
-      left: 10%;
-      bottom: 315px;
-      width: 40%;
-
-      @media screen and (max-width: 767px) and (min-width: 577px) {
-        bottom: 230px;
-        width: 45%;
-      }
-
-      @media screen and (max-width: 576px) {
-        left: 18%;
-        bottom: 130px;
-        width: 40%;
-      }
-
-      // @media screen and (max-width: 1279px) {
-      //   left: 10%;
-      //   width: 30%;
-      // }
-
-      // @media screen and (max-width: 1170px) and (min-width: 1024px) {
-      //   @include promoImgParams(220px, 315px, 500px);
-      // }
-      // @media screen and (max-width: 1023px) {
-      //   @include promoImgParams(340px, 315px, 400px);
-      // }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      width: 700px;
+    }
+    @media screen and (max-width: 767px) and (min-width: 481px) {
+      width: 333px;
+      height: 200px;
+      left: -80px;
     }
 
-    &-oltermanni {
-      // @include promoImgParams(692px, 0, 622px);
-      // @media screen and (max-width: 1023px) {
-      //   @include promoImgParams(680px, 0, 520px);
-      // }
-      right: 9%;
-      bottom: 0;
-      width: 43%;
+    @media screen and (max-width: 480px) {
+      width: 333px;
+      height: 200px;
+      left: -80px;
+    }
+  }
 
-      @media screen and (max-width: 576px) {
-        right: 17%;
-        // bottom: 3px;
-        width: 36%;
-      }
+  &__img-slogan {
+    left: 142px;
+    bottom: 315px;
+    @media screen and (max-width: 1279px) and (min-width: 1023px) {
+      left: 100px;
+      width: 500px;
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      left: 30px;
+      width: 450px;
+    }
+    @media screen and (max-width: 767px) {
+      left: 5px;
+      width: 215px;
+      bottom: 132px;
+    }
+  }
+
+  &__img-person {
+    width: 615px;
+    left: 298px;
+    bottom: 75px;
+    @media screen and (max-width: 1400px) and (min-width: 1280px) {
+      bottom: 115px;
+    }
+    @media screen and (max-width: 1279px) and (min-width: 1023px) {
+      left: 240px;
+      width: 550px;
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      left: 155px;
+      width: 450px;
+    }
+    @media screen and (max-width: 767px) {
+      bottom: 35px;
+      left: 58px;
+      width: 250px;
+    }
+  }
+
+  &__img-oltermanni {
+    width: 622px;
+    right: 125px;
+    bottom: 0;
+    @media screen and (max-width: 1279px) and (min-width: 1023px) {
+      width: 540px;
+      right: 100px;
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      width: 460px;
+      right: 10px;
     }
 
-    &-person {
-      left: 21%;
-      bottom: 75px;
-      width: 43%;
+    @media screen and (max-width: 767px) {
+      width: 200px;
+      right: 0;
+    }
+  }
 
-      @media screen and (max-width: 767px) and (min-width: 577px) {
-        left: 27%;
-        bottom: 85px;
-        width: 47%;
-      }
-
-      @media screen and (max-width: 576px) {
-        left: 28%;
-        bottom: 35px;
-        // width: 43%;
-      }
-      // @include promoImgParams(298px, 75px, 615px);
-      // @media screen and (max-width: 1170px) and (min-width: 1024px) {
-      //   @include promoImgParams(360px, 100px, 560px);
-      // }
-      // @media screen and (max-width: 1023px) {
-      //   @include promoImgParams(430px, 130px, 480px);
-      // }
+  &__img-prize {
+    width: 177px;
+    right: 162px;
+    bottom: 408px;
+    @media screen and (max-width: 1279px) and (min-width: 1023px) {
+      width: 160px;
+      right: 120px;
     }
 
-    &-prize {
-      right: 11.25%;
-      bottom: 408px;
-      width: 12.5%;
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      width: 160px;
+      right: 40px;
+      bottom: 360px;
+    }
 
-      @media screen and (max-width: 767px) and (min-width: 577px) {
-        right: 13%;
-        bottom: 300px;
-        width: 15.5%;
-      }
-
-      @media screen and (max-width: 576px) {
-        right: 18.5%;
-        bottom: 138px;
-        width: 12.5%;
-      }
-      //   @include promoImgParams(1100px, 408px, 177px);
-      //   @media screen and (max-width: 1170px) and (min-width: 1024px) {
-      //     @include promoImgParams(1050px, 408px, 167px);
-      //   }
-      //   @media screen and (max-width: 1023px) {
-      //     @include promoImgParams(920px, 408px, 167px);
-      //   }
-      // }
+    @media screen and (max-width: 767px) {
+      width: 68px;
+      right: 12px;
+      bottom: 140px;
     }
   }
 
@@ -247,7 +187,7 @@
     background-color: $gray;
     position: absolute;
     z-index: 6;
-    top: 694px;
+    top: 692px;
     left: 50%;
     width: 234px;
     height: 69px;
@@ -266,27 +206,21 @@
     opacity: 1;
     transition: $transition;
 
-    @media screen and (min-width: 768px) {
-      &:hover {
-        opacity: 0.6;
-      }
+    &:hover {
+      opacity: 0.6;
     }
 
-    @media screen and (max-width: 1023px) and (min-width: 768px) {
-      top: 600px;
+    @media screen and (max-width: 1279px) and (min-width: 768px) {
+      top: 625px;
     }
 
     @media screen and (max-width: 767px) {
-      top: 530px;
+      top: 262px;
       font-size: 14px;
       line-height: 21px;
       width: 164px;
       height: 47px;
       padding: 6px;
-    }
-
-    @media screen and (max-width: 576px) {
-      top: 262px;
     }
   }
 

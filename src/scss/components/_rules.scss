@@ -1,24 +1,48 @@
 .rules {
   background: $gradient;
   width: 100%;
-  height: 693px;
-  // margin-top: 400px;
+  // height: 693px;
+  margin-top: 485px;
   position: absolute;
   padding: 0 10px;
   bottom: 0;
+  top: 0;
   left: 0;
+
+  @media screen and (max-width: 1279px) {
+    margin-top: 380px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 300px;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-height: 1070px;
+  }
+
+  @media screen and (max-width: 576px) {
+    min-height: 600px;
+  }
 
   &__img {
     position: absolute;
-
-    &-baloon {
-      left: 57px;
-      bottom: 253px;
+  }
+  &__img-baloon {
+    left: 57px;
+    bottom: 253px;
+    @media screen and (max-width: 1023px) {
+      bottom: 330px;
+      left: 27px;
     }
+  }
 
-    &-vector {
-      right: 74px;
-      bottom: 313px;
+  &__img-vector {
+    right: 74px;
+    bottom: 313px;
+    @media screen and (max-width: 1023px) {
+      bottom: 363px;
+      right: 27px;
     }
   }
 
@@ -63,6 +87,12 @@
     margin: 0 22px;
     margin-top: 70px;
     flex-shrink: 0;
+    @media screen and (max-width: 1023px) {
+      width: 10px;
+      background-size: contain;
+      margin: 0 3px;
+      margin-top: 70px;
+    }
   }
 
   &__card-description {
@@ -74,5 +104,9 @@
     font-size: 20px;
     line-height: 22px;
     color: $brownSecond;
+
+    @media screen and (max-width: 1023px) {
+      min-width: auto;
+    }
   }
 }
