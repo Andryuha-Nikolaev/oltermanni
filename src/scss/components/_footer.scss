@@ -40,6 +40,12 @@
       display: flex;
       gap: 70px;
       li {
+        opacity: 1;
+        transition: $transition;
+
+        &:hover {
+          opacity: 0.6;
+        }
         a {
           font-family: 'PF Din Text Cond Pro';
           font-style: normal;

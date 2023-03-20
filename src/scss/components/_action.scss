@@ -1,7 +1,12 @@
 .action {
   margin: 0 auto;
   position: relative;
-  padding-bottom: 250px;
+  padding-bottom: 170px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 130px;
+  }
+
   // padding: 0 70px;
   // padding: 0 20px;
   &__title {
@@ -12,12 +17,24 @@
     font-size: 36px;
     line-height: 46px;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      padding: 36px 0 13px;
+      font-size: 30px;
+      line-height: 46px;
+    }
   }
 
   &__img {
     position: absolute;
-    top: -30px;
+    top: -26px;
     left: 110px;
+
+    @media screen and (max-width: 767px) {
+      width: 45px;
+      height: 41px;
+      top: -25px;
+      left: 53px;
+    }
   }
 
   &__btn-container {
@@ -26,6 +43,5 @@
 
     max-width: 1185px;
     position: relative;
-    background-color: aqua;
   }
 }

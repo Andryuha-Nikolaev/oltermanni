@@ -39,6 +39,7 @@
     margin-bottom: 5px;
     // width: 100%;
     @media screen and (max-width: 1023px) {
+      margin-bottom: 10px;
       width: 141px;
     }
 
@@ -81,6 +82,10 @@
     &:hover {
       opacity: 0.6;
     }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__button-next {
@@ -95,12 +100,22 @@
     &:hover {
       opacity: 0.6;
     }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
 .swiper {
   &-pagination-bullets {
-    top: 540px;
+    top: 544px;
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      top: 460px;
+    }
+    @media screen and (max-width: 767px) {
+      top: 403px;
+    }
   }
 
   &-pagination-bullet {

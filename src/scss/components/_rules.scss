@@ -22,9 +22,10 @@
     // background: $yellow;
     margin-top: 35px;
     position: static;
+    padding-bottom: 49px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 390px) {
     background: $yellow;
   }
 
@@ -92,7 +93,7 @@
     @media screen and (max-width: 767px) {
       margin-top: 35px;
       flex-direction: column;
-      margin-bottom: 50px;
+      // margin-bottom: 49px;
     }
   }
 
