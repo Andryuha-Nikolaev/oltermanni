@@ -1,14 +1,28 @@
 .footer {
   margin: 0 auto;
-  max-width: 1260px;
-  padding: 22px 44px 9px;
+  max-width: 1190px;
+  padding: 22px 10px 9px;
   min-height: 130px;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid $gray;
+
+  @media screen and (max-width: 767px) {
+    min-height: 253px;
+    padding: 24px 43px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
   &__info {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 25px;
+      margin-bottom: 14px;
+    }
   }
 
   &__text {
@@ -17,6 +31,12 @@
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
   }
 
   &__tel {
@@ -25,6 +45,11 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 58px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+      line-height: 52px;
+    }
   }
 
   &__author {
@@ -33,12 +58,44 @@
     font-size: 12px;
     line-height: 21px;
     color: $brownSecond;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__author_mobile {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 21px;
+    color: $brownSecond;
+    margin-top: 17px;
+    display: none;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
   }
 
   &__links {
+    @media screen and (max-width: 767px) {
+      // display: flex;
+      order: -1;
+    }
     ul {
       display: flex;
       gap: 70px;
+
+      @media screen and (max-width: 1023px) and (min-width: 768px) {
+        min-width: 0;
+        gap: 10px;
+      }
+
+      @media screen and (max-width: 767px) {
+        gap: 43px;
+      }
+
       li {
         opacity: 1;
         transition: $transition;
@@ -46,12 +103,22 @@
         &:hover {
           opacity: 0.6;
         }
+
+        // @media screen and (max-width: 1023px)  {
+        //   gap: 20px;
+        // }
+
         a {
           font-family: 'PF Din Text Cond Pro';
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
           line-height: 21px;
+
+          @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 21px;
+          }
         }
       }
     }
