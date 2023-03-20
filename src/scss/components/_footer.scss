@@ -46,6 +46,10 @@
     font-size: 36px;
     line-height: 58px;
 
+    a {
+      color: $red;
+    }
+
     @media screen and (max-width: 767px) {
       font-size: 30px;
       line-height: 52px;
@@ -80,7 +84,6 @@
 
   &__links {
     @media screen and (max-width: 767px) {
-      // display: flex;
       order: -1;
     }
     ul {
@@ -97,16 +100,7 @@
       }
 
       li {
-        opacity: 1;
-        transition: $transition;
-
-        &:hover {
-          opacity: 0.6;
-        }
-
-        // @media screen and (max-width: 1023px)  {
-        //   gap: 20px;
-        // }
+        @include hover(0.6);
 
         a {
           font-family: 'PF Din Text Cond Pro';

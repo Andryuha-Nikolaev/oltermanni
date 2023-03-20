@@ -18,12 +18,7 @@
 
       background-color: #ffcd00;
 
-      opacity: 1;
-      transition: $transition;
-
-      &:hover {
-        opacity: 0.6;
-      }
+      @include hover(0.6);
 
       a {
         width: 100%;

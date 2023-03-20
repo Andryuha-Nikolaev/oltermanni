@@ -62,12 +62,7 @@
 
   &__logo {
     margin-top: 8px;
-    opacity: 1;
-    transition: $transition;
-
-    &:hover {
-      opacity: 0.6;
-    }
+    @include hover(0.6);
 
     @media screen and (max-width: 767px) {
       width: 136px;
@@ -99,12 +94,7 @@
         font-size: 16px;
         line-height: 21px;
         text-transform: uppercase;
-        opacity: 1;
-        transition: $transition;
-
-        &:hover {
-          opacity: 0.6;
-        }
+        @include hover(0.6);
       }
     }
   }
@@ -118,12 +108,6 @@
       gap: 20px;
 
       li {
-        opacity: 1;
-        transition: $transition;
-
-        &:hover {
-          opacity: 0.6;
-        }
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -142,12 +126,6 @@
       gap: 15px;
 
       li {
-        opacity: 1;
-        transition: $transition;
-
-        &:hover {
-          opacity: 0.6;
-        }
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -177,12 +155,7 @@
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
-    opacity: 1;
-    transition: $transition;
-
-    &:hover {
-      opacity: 0.6;
-    }
+    @include hover(0.6);
 
     @media screen and (max-width: 767px) {
       display: none;

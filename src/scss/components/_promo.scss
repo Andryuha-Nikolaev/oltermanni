@@ -69,13 +69,10 @@
     height: 100%;
 
     @media screen and (max-width: 767px) {
-      // width: 360px;
       width: 390px;
-      // width: 100vw;
     }
 
     @media screen and (max-width: 390px) {
-      // width: 315px;
       width: 100vw;
     }
   }
@@ -211,13 +208,7 @@
     border-radius: 46px;
     font-family: 'PF Din Text Cond Pro';
     text-transform: uppercase;
-    opacity: 1;
-    transition: $transition;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
+    @include hover(0.6);
     @media screen and (max-width: 1279px) and (min-width: 768px) {
       top: 625px;
     }

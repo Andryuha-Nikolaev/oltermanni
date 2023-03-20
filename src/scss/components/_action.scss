@@ -7,8 +7,6 @@
     padding-bottom: 130px;
   }
 
-  // padding: 0 70px;
-  // padding: 0 20px;
   &__title {
     padding: 66px 0 24px;
     text-align: center;
@@ -17,6 +15,7 @@
     font-size: 36px;
     line-height: 46px;
     text-transform: uppercase;
+
     @media screen and (max-width: 767px) {
       padding: 36px 0 13px;
       font-size: 30px;
@@ -39,8 +38,6 @@
 
   &__btn-container {
     margin: 0 auto;
-    // padding: 0 10px;
-
     max-width: 1185px;
     position: relative;
   }

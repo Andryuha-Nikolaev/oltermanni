@@ -6,23 +6,19 @@ import 'swiper/scss/pagination';
 import './scss/index.scss';
 import Swiper, { Navigation, Pagination } from 'swiper';
 
+// настройки слайдера
 const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 2.4,
   spaceBetween: 22,
+  grabCursor: true,
 
   breakpoints: {
-    // 300: {
-    //   slidesPerView: 2.5,
-    //   // spaceBetween: 25,
-    // },
     768: {
       slidesPerView: 3,
-      // spaceBetween: 10,
     },
-    1023: {
+    1024: {
       slidesPerView: 4,
-      // spaceBetween: 20,
     },
   },
 
