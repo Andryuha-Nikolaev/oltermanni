@@ -82,19 +82,21 @@
 
 .swiper {
   &-pagination-bullets {
-    top: 544px;
+    top: 546px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
 
     @media screen and (max-width: 1023px) and (min-width: 768px) {
       top: 460px;
     }
 
     @media screen and (max-width: 767px) {
-      top: 403px;
+      top: 405px;
     }
   }
 
   &-pagination-bullet {
-    top: 50px;
     width: 11px;
     height: 11px;
     border: none;
