@@ -134,10 +134,12 @@
     @media screen and (max-width: 1279px) and (min-width: 1023px) {
       left: 240px;
       width: 550px;
+      bottom: 115px;
     }
     @media screen and (max-width: 1023px) and (min-width: 768px) {
       left: 155px;
       width: 450px;
+      bottom: 115px;
     }
     @media screen and (max-width: 767px) {
       bottom: 35px;
@@ -196,18 +198,9 @@
     left: 50%;
     width: 234px;
     height: 69px;
-
     transform: translate3d(-50%, 0, 0);
-
-    color: $white;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
     border-radius: 46px;
-    font-family: 'PF Din Text Cond Pro';
-    text-transform: uppercase;
+
     @include hover(0.6);
     @media screen and (max-width: 1279px) and (min-width: 768px) {
       top: 625px;
@@ -215,8 +208,6 @@
 
     @media screen and (max-width: 767px) {
       top: 262px;
-      font-size: 14px;
-      line-height: 21px;
       width: 164px;
       height: 47px;
       padding: 6px;
@@ -231,5 +222,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 29px;
+    color: $white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'PF Din Text Cond Pro';
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      font-size: 13px;
+      line-height: 21px;
+    }
   }
 }

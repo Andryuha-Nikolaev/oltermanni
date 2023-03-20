@@ -4,8 +4,7 @@
   font-weight: 400;
   font-display: swap;
   src: url('./pfdintextcondpro-regular.woff2') format('woff2'),
-    url('./pfdintextcondpro-regular.woff') format('woff'),
-    url('./PFDinTextCondPro-Regular.ttf') format('truetype');
+    url('./pfdintextcondpro-regular.woff') format('woff');
 }
 
 @font-face {
@@ -14,8 +13,7 @@
   font-weight: 500;
   font-display: swap;
   src: url('./pfdintextcondpro-medium.woff2') format('woff2'),
-    url('./pfdintextcondpro-medium.woff') format('woff'),
-    url('./PFDinTextCondPro-Medium.ttf') format('truetype');
+    url('./pfdintextcondpro-medium.woff') format('woff');
 }
 
 @font-face {
@@ -24,6 +22,5 @@
   font-weight: 700;
   font-display: swap;
   src: url('./pfdintextcondpro-bold.woff2') format('woff2'),
-    url('./pfdintextcondpro-bold.woff') format('woff'),
-    url('./PFDinTextCondPro-Bold.ttf') format('truetype');
+    url('./pfdintextcondpro-bold.woff') format('woff');
 }
