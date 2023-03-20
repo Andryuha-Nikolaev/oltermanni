@@ -9,20 +9,23 @@
   top: 0;
   left: 0;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279px) and (min-width: 768px) {
     margin-top: 380px;
   }
 
-  @media screen and (max-width: 1023px) {
-    margin-top: 300px;
-  }
+  // @media screen and (max-width: 1023px) {
+  //   margin-top: 300px;
+  // }
 
   @media screen and (max-width: 767px) {
-    min-height: 1070px;
+    // min-height: 600px;
+    // background: $yellow;
+    margin-top: 35px;
+    position: static;
   }
 
-  @media screen and (max-width: 576px) {
-    min-height: 600px;
+  @media screen and (max-width: 480px) {
+    background: $yellow;
   }
 
   &__img {
@@ -35,14 +38,25 @@
       bottom: 330px;
       left: 27px;
     }
+    @media screen and (max-width: 767px) {
+      width: 50px;
+      height: 100px;
+      top: 490px;
+    }
   }
 
   &__img-vector {
     right: 74px;
     bottom: 313px;
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
       bottom: 363px;
       right: 27px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 21px;
+      height: 32px;
+      top: 500px;
+      right: 50px;
     }
   }
 
@@ -60,6 +74,11 @@
     text-transform: uppercase;
     color: $red;
     text-shadow: -3px 5px $white;
+
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      line-height: 41px;
+    }
   }
 
   &__card-list {
@@ -69,6 +88,12 @@
     justify-content: space-between;
     // margin-left: 129px;
     max-width: 1182px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 35px;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
   }
 
   &__card {
@@ -87,11 +112,19 @@
     margin: 0 22px;
     margin-top: 70px;
     flex-shrink: 0;
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
       width: 10px;
       background-size: contain;
       margin: 0 3px;
       margin-top: 70px;
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: url(../../assets/img/card-arrow-mobile.svg);
+      width: 30px;
+      height: 14px;
+      background-size: contain;
+      margin: 24px auto 26px;
     }
   }
 
