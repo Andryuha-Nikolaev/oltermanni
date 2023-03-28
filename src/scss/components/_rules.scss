@@ -95,7 +95,7 @@
   }
 
   &__card-arrow {
-    background-image: url(../../assets/img/card-arrow.svg);
+    background-image: url(../../assets/img/rules/card-arrow.svg);
     width: 24px;
     background-repeat: no-repeat;
     margin: 0 22px;
@@ -109,7 +109,7 @@
     }
 
     @media screen and (max-width: 767px) {
-      background-image: url(../../assets/img/card-arrow-mobile.svg);
+      background-image: url(../../assets/img/rules/card-arrow-mobile.svg);
       width: 30px;
       height: 14px;
       background-size: contain;
