@@ -20,7 +20,7 @@
   }
 
   @media screen and (max-width: 390px) {
-    background: $yellow;
+    background: $main-bg-color;
   }
 
   &__img {
@@ -64,7 +64,7 @@
     font-size: 60px;
     line-height: 46px;
     text-transform: uppercase;
-    color: $red;
+    color: $third-text-color;
     text-shadow: -3px 5px $white;
 
     @media screen and (max-width: 767px) {
@@ -125,7 +125,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
-    color: $brownSecond;
+    color: $second-text-color;
 
     @media screen and (max-width: 1023px) {
       min-width: auto;

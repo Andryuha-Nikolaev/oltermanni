@@ -1,10 +1,12 @@
 $black: #010101;
 $white: #ffffff;
-$brown: #5a1404;
-$brownSecond: #5b1a0d;
-$yellow: #ffcd00;
-$red: #e63000;
-$gray: #ededed;
+$main-bg-color: #ffcd00;
+$primary-text-color: #5a1404;
+$second-text-color: #5b1a0d;
+$third-text-color: #e63000;
+$burger-border-color: #ecb200;
+$footer-border-color: #ededed;
+
 $gradient: linear-gradient(180deg, #ecb200 0%, #ffcf00 78.83%);
 
 $transition: opacity 0.2s linear, scale 0.2s linear;
