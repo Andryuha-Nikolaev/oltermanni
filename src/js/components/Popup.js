@@ -6,6 +6,7 @@ export default class Popup {
 
   //функция открытия попапа
   open() {
+    this._popup.classList.add('popup_transition');
     this._popup.classList.add('popup_opened'); //добавляем класс открытого попапа
     document.addEventListener('keydown', this._handleEscClose); //ставим слушатель на нажатие esc
   }
@@ -13,6 +14,7 @@ export default class Popup {
   //функция закрытия попапа
   close() {
     this._popup.classList.remove('popup_opened'); //убираем класс открытого попапа
+
     document.removeEventListener('keydown', this._handleEscClose); //убираем слушатель на нажатие esc
   }
 

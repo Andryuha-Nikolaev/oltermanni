@@ -5,6 +5,7 @@ export default class Burger {
   }
 
   open() {
+    this._burger.classList.add('header__burger-menu_transition');
     this._burger.classList.add('header__burger-menu_opened');
     this._button.classList.add('header__burger-btn_opened');
   }
