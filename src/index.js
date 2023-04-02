@@ -41,3 +41,5 @@ popupRegister.setEventListeners(); // навешиваем слушатели
 registerBtn.addEventListener('click', () => {
   popupRegister.open(); // открываем попап
 });
+
+console.log(window.devicePixelRatio);
