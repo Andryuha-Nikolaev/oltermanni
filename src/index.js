@@ -14,7 +14,7 @@ const registerBtn = document.getElementById('register-btn');
 // кнопка бургер меню
 const burgerBtn = document.querySelector('.header__burger-btn');
 
-const burgerMenu = new Burger('.header__burger-menu', '.header__burger-btn');
+const burgerMenu = new Burger('.burger', '.header__burger-btn');
 burgerBtn.addEventListener('click', (evt) => {
   if (evt.target.classList.contains('header__burger-btn_opened')) {
     burgerMenu.close();

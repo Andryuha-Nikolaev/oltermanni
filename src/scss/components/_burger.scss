@@ -1,0 +1,61 @@
+.burger {
+  z-index: 7;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 0 10px;
+  transform: translate3d(-100%, 0, 0);
+
+  background-color: $main-bg-color;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  &_opened {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &_transition {
+    transition: transform 1s cubic-bezier(0.1, 0.5, 0, 1);
+  }
+
+  &__nav {
+    padding: 25px 10px 24px;
+    border-bottom: 1px solid $burger-border-color;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__links {
+    padding: 25px 10px 24px;
+    border-bottom: 1px solid $burger-border-color;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &-item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
